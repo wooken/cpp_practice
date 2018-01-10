@@ -40,7 +40,7 @@ int main() {
         cout << students[i].name
             << string(maxlen + 1 - students[i].name.size(), ' ');
 
-        // computer and write the grade
+        // compute and write the grade
         try {
             double final_grade = grade(students[i]);
             streamsize prec = cout.precision();
