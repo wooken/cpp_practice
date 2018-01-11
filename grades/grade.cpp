@@ -21,3 +21,11 @@ double grade(double midterm, double final, const vector<double> &hw) {
 double grade(const Student_info &s) {
     return grade(s.midterm, s.final, s.homework);
 }
+
+double grade_aux(const Student_info &s) {
+    try {
+        return grade(s);
+    } catch (domain_error) {
+        return grade(s.midterm, s.final, 0);
+    }
+}
