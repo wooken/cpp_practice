@@ -1,3 +1,5 @@
 main
 proto
 *.o
+a.out
+tags
